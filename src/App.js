@@ -1,24 +1,44 @@
-import logo from './logo.svg';
+import image from './jordan.jpeg';
+import Emage from './jordan nike.jpg';
+import Samad from './korean fashion.jpg';
 import './App.css';
-
+import Samd from './new.js';
+import Myname from './first.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
+  let productdetails = {
+    title: ['japan Shoe', 'nigerian Shoe', 'italian Shoe',],
+    tap: [100, 200, 300],
+    image: [image, Emage, Samad],
+
+
+  };
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='App'>
+        <Samd />
+
+
+
+        
+        <div className='dad'>
+        {
+          productdetails.title.map((title,index)=>{
+            return  <Myname key={index} 
+            image={productdetails.image[index]}
+            title={productdetails.title[index]}
+            tap={productdetails.tap[index]}
+            />
+          })
+        }
+          
+
+        </div>
+      </div>
+    </>
+
   );
 }
 
