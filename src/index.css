@@ -26,28 +26,34 @@ code {
 .sal {
   background-color: purple;
   text-align: center;
-  margin: auto;
   color: white;
   border-radius: 10px;
-  width: 20%;
-  padding: 2%;
+  padding: 12px;
+
 }
 
-.dad {
+/* .dad {
   display: flex;
   gap: 4%;
-}
-#haa {
-  width: auto;
-}
+} */
+
 #get {
   font-size: 30px;
   width:auto;
   background-color: rgb(74, 13, 74);
   color: white;
   border-radius: 10px;
+  
 
 }
 #badie{
   border-radius: 10%;
+  /* margin: 10px;
+  gap: 10px; */
+}
+@media screen and (max-width :765px) {
+  .sal{
+    margin-left: 20px;
+  }
+  
 }

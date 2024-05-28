@@ -2,24 +2,24 @@ import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 function Myname(props) {
     
-    let [tap, setTitle] = useState(props.tap)
-    // const changeTitle = () => {
-    //     tap = props.tap / 2
+    let [tap, setTap] = useState(props.tap)
+    const changeTitle = () => {
+       let dad = Math.trunc(tap / 2)
   
-    //   setTitle("$" + tap)
-    // }
+      setTap(dad)
+    }
 
     return (
-        <div className="sal">
+        <div className="sal w-100 mx-0 mx-lg-3 my-3  ">
             <>
                 <h1 id="haa"> {props.title} </h1><br></br>
-                <img src={props.image} alt="" width= "70%" id="badie" /><br></br><br></br>
+                <img src={props.image} alt="" width= "60%" height= "300"  id="badie" /><br></br><br></br>
                 <h3> PRICE: {tap}</h3><br></br>
-                <button id="get" onClick={() => setTitle(tap / 2 && ("$" + tap) )}>GET DISCOOUNT</button>
+                <button id="get" onClick={changeTitle} >GET DISCOOUNT</button>
 
 
             </>
-        </div>
+        </div>  
     )
     
 }

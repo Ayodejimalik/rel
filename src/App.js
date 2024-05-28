@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   let productdetails = {
     title: ['japan Shoe', 'nigerian Shoe', 'italian Shoe',],
-    tap: [100, 200, 300],
+    tap: [1000, 500, 500],
     image: [image, Emage, Samad],
 
 
@@ -23,7 +23,7 @@ function App() {
 
 
         
-        <div className='dad'>
+        <div className='d-flex flex-column w-100 flex-lg-row justify-content-center align-item-center '>
         {
           productdetails.title.map((title,index)=>{
             return  <Myname key={index} 
