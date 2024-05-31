@@ -7,7 +7,7 @@ import Myname from './first.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   let productdetails = {
-    title: ['japan Shoe', 'nigerian Shoe', 'italian Shoe',],
+    title: ['japan Shoe', 'nigerian Shoe', 'italian Shoe', ],
     tap: [1000, 500, 500],
     image: [image, Emage, Samad],
 
